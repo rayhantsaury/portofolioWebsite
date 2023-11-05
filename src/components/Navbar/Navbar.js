@@ -85,6 +85,7 @@ function Navbar() {
       color: theme.primary,
       width: "85%",
       height: "60px",
+      marginTop: "-20px",
       display: "flex",
       alignItems: "center",
       justifyContent: "space-evenly",
@@ -193,7 +194,16 @@ function Navbar() {
               <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Resume</span>
+                  <span className={classes.drawerLinks}>Education</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink to="/#tugas" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <HiDocumentText className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Tugas</span>
                 </div>
               </NavLink>
             </Fade>
@@ -203,6 +213,15 @@ function Navbar() {
                 <div className={classes.drawerItem}>
                   <BsFillGearFill className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>Organization</span>
+                </div>
+              </NavLink>
+            </Fade>
+
+            <Fade left>
+              <NavLink to="/#projects" smooth={true} spy="true" duration={2000}>
+                <div className={classes.drawerItem}>
+                  <BsFillGearFill className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Hobbies</span>
                 </div>
               </NavLink>
             </Fade>
